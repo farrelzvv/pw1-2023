@@ -1,0 +1,144 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the body */
+body {
+    background-image: url(assets/img/setu\ cibinong.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    border-radius: 10px;
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px); 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 
+    0 0 10px white, 0 0 3px white, 0 0 10px white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Style sections */
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px); 
+    color: white;
+}
+
+section h2 {
+    color: white;
+    text-shadow: 
+    0 0 10px white, 0 0 3px white, 0 0 10px white;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the unordered list */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style the image gallery */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Style the contact form */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(5px);
+    padding: 10px 0;
+}
+
+form input[type="submit"] {
+    background-color: #d608ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fffcfc;
+    color: #d608ff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
