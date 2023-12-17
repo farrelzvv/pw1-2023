@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 200px;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="triangleForm">
+        <label for="base">Alas:</label>
+        <input type="number" id="base" required>
+
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height" required>
+
+        <button type="button" onclick="calculateTriangle()">Hitung</button>
+
+        <p id="result">Hasil akan ditampilkan di sini.</p>
+    </form>
+
+    <script>
+        function calculateTriangle() {
+            var base = parseFloat(document.getElementById('base').value);
+            var height = parseFloat(document.getElementById('height').value);
+
+            if (!isNaN(base) && !isNaN(height)) {
+                var luas = 0.5 * base * height;
+                var keliling = base + height + Math.sqrt(base**2 + height**2);
+
+                document.getElementById('result').innerHTML = 'Luas: ' + luas.toFixed(2) + ', Keliling: ' + keliling.toFixed(2);
+            } else {
+                document.getElementById('result').innerHTML = 'Masukkan nilai yang valid untuk alas dan tinggi.';
+            }
+        }
+    </script>
+</body>
+</html>
