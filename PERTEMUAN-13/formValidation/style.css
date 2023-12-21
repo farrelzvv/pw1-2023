@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Warna latar belakang halaman */
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Warna latar belakang formulir */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+/* Gaya untuk informasi pesanan */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #4cacaf; /* Warna garis batas */
+    border-radius: 8px;
+    background-color: #ffffff; /* Warna latar belakang */
+    color: #4cacaf; /* Warna teks */
+    margin-left: 20px;
+}
